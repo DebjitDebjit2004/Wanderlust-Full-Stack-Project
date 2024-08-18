@@ -1,0 +1,98 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+/* NAVBAR DESIGNING */
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    font-size: 2rem;
+    color: #fe424d;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* HOME PAGE DESIGNING */
+.card {
+    border: none !important;
+    margin-bottom: 1rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.listing-link {
+    text-decoration: none;
+    color: #222222;
+}
+
+.card-img-overlay{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* NEW SECTION DESIGN */
+.add-btn{
+    background-color: #fe424d !important;
+    color: white !important;
+}
+
+/* SHOW SECTION DESIGN */
+.edit-btns-div {
+    display: flex;
+}
+.edit-btns-div button{
+    margin-right: 1.5rem;
+    background-color: #fe424d !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+/* FOOTER DESIGNING */
+.f-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #ebebeb;
+    height: 8rem;
+}
+
+.f-info-social {
+    text-align: center;
+}
+
+.f-info-social i {
+    margin: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.f-info-links {
+    text-align: center;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+    margin: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.f-info-text {
+    text-align: center;
+} 
