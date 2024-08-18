@@ -36,10 +36,10 @@
                     </div>
                     <% if(currUser && currUser._id.equals(listingDetails.owner._id)) {%>
                         <div class="mb-3 edit-btns-div">
-                            <form action="http://localhost:8080/listing/<%= listingDetails.id %>/edit" method="get">
+                            <form action="/listing/<%= listingDetails.id %>/edit" method="get">
                                 <button class="btn">Edit Now</button>
                             </form>
-                            <form action="http://localhost:8080/listing/<%= listingDetails.id %>?_method=DELETE"
+                            <form action="/listing/<%= listingDetails.id %>?_method=DELETE"
                                 method="post">
                                 <button class="btn">Delete Now</button>
                             </form>
@@ -49,7 +49,7 @@
                             <% if(currUser) {%>
                                 <div>
                                     <h3>Write Your Review!!!</h3>
-                                    <form action="http://localhost:8080/listing/<%= listingDetails.id %>/reviews"
+                                    <form action="/listing/<%= listingDetails.id %>/reviews"
                                         method="post" novalidate class="needs-validation">
                                         <div class="mb-3">
                                             <label for="Rating" class="form-label">Rating</label>
@@ -99,7 +99,7 @@
                                                 </li><br><br>
                                                 <% if(currUser) {%>
                                                     <form
-                                                        action="http://localhost:8080/listing/<%= listingDetails.id %>/reviews/<%= reviews.id %>?_method=DELETE"
+                                                        action="/listing/<%= listingDetails.id %>/reviews/<%= reviews.id %>?_method=DELETE"
                                                         method="post">
                                                         <button class="btn btn-sm btn-dark">Delete</button>
                                                     </form>
