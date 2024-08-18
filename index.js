@@ -36,7 +36,7 @@ async function main() {
     await mongoose.connect(MONGO_URL);
 };
 
-const mongoSession = MongoStore.create({
+const store = MongoStore.create({
     mongoUrl: MONGO_URL,
     crypto: {
         secret: process.env.SECRET_KEY,
@@ -45,12 +45,12 @@ const mongoSession = MongoStore.create({
     touchAfter: 24 * 3600,
 });
 
-mongoSession.on("error", ()=>{
+store.on("error", ()=>{
     console.log(err);
 })
 
 const sessionOptions = {
-    mongoSession,
+    store,
     secret: process.env.SECRET_KEY,
     resave: false,
     saveUninitialized: true,
